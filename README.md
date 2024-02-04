@@ -50,10 +50,6 @@ wget -O docker-compose-postgres.yml https://raw.githubusercontent.com/spring-clo
 ```
 ### Modify the version of zookeeper
 The default version of Zookeeper in `docker-compose-kafka.yml` is 5, change this to a newer release, say 5.4.0 or LATEST
-
-You will now see the `spring-cloud-dataflow-demo` Docker image running in your Docker Desktop Dashboard
-![image](https://github.com/paul-reese/spring-cloud-dataflow-demo/assets/8217170/34c78c4c-7b00-44d4-b57c-67575b2abfe1)
-
 ## Set variables needed for local development
 Let's init variables first
 1. set Dockerhub username and password
@@ -73,6 +69,8 @@ export DOCKER_MOUNT_PATH=/root/.m2/
 ```
 docker-compose -f docker-compose.yml -f docker-compose-kafka.yml -f docker-compose-postgres.yml up
 ```
+You will now see the `spring-cloud-dataflow-demo` Docker image running in your Docker Desktop Dashboard
+![image](https://github.com/paul-reese/spring-cloud-dataflow-demo/assets/8217170/34c78c4c-7b00-44d4-b57c-67575b2abfe1)
 ## SCDF Dashboard
 The [Spring Cloud Data Flow Dashboard](http://localhost:9393/dashboard/index.html#/apps) will now be made available.  Additionally these endpoints will be exposed
 * [REST API](http://localhost:9393)
