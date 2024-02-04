@@ -5,4 +5,6 @@ docker[https://docs.docker.com/get-docker/]
 docker-compose[https://docs.docker.com/compose/install/]
 
 ## Building
+```
   ./mvnw -s .settings.xml clean install
+```
