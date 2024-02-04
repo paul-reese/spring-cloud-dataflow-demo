@@ -56,6 +56,7 @@ Let's init variables first
 2. set version of Data Flow
 3. set version of Skipper
 4. use local Maven repository as default for newly built applications
+5. Bump the version of JDK to 17
 ```
 export METADATA_DEFAULT_DOCKERHUB_USER=<your username>
 export METADATA_DEFAULT_DOCKERHUB_PASSWORD=<your passwrod>
@@ -64,6 +65,8 @@ export SKIPPER_VERSION=2.11.2
 
 export HOST_MOUNT_PATH=~/.m2
 export DOCKER_MOUNT_PATH=/root/.m2/
+
+export BP_JVM_VERSION=-jdk17
 ```
 ## Starting Docker Compose
 ```
