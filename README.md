@@ -14,6 +14,7 @@ git clone https://github.com/spring-cloud/spring-cloud-dataflow.git
 2. Change directoy to root of project
 ```
 cd spring-cloud-df
+```
 
 2. Build the root project
 ```
