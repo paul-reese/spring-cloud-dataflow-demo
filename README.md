@@ -48,6 +48,12 @@ wget -O docker-compose.yml https://raw.githubusercontent.com/spring-cloud/spring
 wget -O docker-compose-kafka.yml https://raw.githubusercontent.com/spring-cloud/spring-cloud-dataflow/main/src/docker-compose/docker-compose-kafka.yml
 wget -O docker-compose-postgres.yml https://raw.githubusercontent.com/spring-cloud/spring-cloud-dataflow/main/src/docker-compose/docker-compose-postgres.yml
 ```
+### Modify the version of zookeeper
+The default version of Zookeeper in `docker-compose-kafka.yml` is 5, change this to a newer release, say 5.4.0 or LATEST
+
+You will now see the `spring-cloud-dataflow-demo` Docker image running in your Docker Desktop Dashboard
+![image](https://github.com/paul-reese/spring-cloud-dataflow-demo/assets/8217170/34c78c4c-7b00-44d4-b57c-67575b2abfe1)
+
 ## Starting Docker Compose
 ```
 export METADATA_DEFAULT_DOCKERHUB_USER=<your username>
@@ -56,13 +62,14 @@ export DATAFLOW_VERSION=2.11.2
 export SKIPPER_VERSION=2.11.2
 docker-compose -f docker-compose.yml -f docker-compose-kafka.yml -f docker-compose-postgres.yml up
 ```
-### Modify the version of zookeeper
-The default version of Zookeeper in `docker-compose-kafka.yml` is 5, change this to a newer release, say 5.4.0 or LATEST
-
-You will now see the `spring-cloud-dataflow-demo` Docker image running in your Docker Desktop Dashboard
-![image](https://github.com/paul-reese/spring-cloud-dataflow-demo/assets/8217170/34c78c4c-7b00-44d4-b57c-67575b2abfe1)
-
 ## SCDF Dashboard
 The [Spring Cloud Data Flow Dashboard](http://localhost:9393/dashboard/index.html#/apps) will now be made available.  Additionally these endpoints will be exposed
 * [REST API](http://localhost:9393)
 * [Skipper Port](http://localhost:7577/api)
+
+## Stopping Spring Cloud Data Flow
+1. Press Ctrl+C to shut down the docker-compose process.
+2. Run the following command to clean the used Docker containers:
+   ```
+   docker-compose down
+   ```
