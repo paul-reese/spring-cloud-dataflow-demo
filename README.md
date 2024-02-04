@@ -1,10 +1,10 @@
 # spring-cloud-dataflow-demo
 ## Pre-requisities
 These binaries are needed to but build, run and deploy **Spring Cloud Data Flow** locally.  We will use Docker and Docker Compose to deploy SCDF applications locally as well.
-docker[https://docs.docker.com/get-docker/]
-docker-compose[https://docs.docker.com/compose/install/]
-kubectl[https://kubernetes.io/releases/download/]
-minikube [https://minikube.sigs.k8s.io/docs/start/]
+[docker] (https://docs.docker.com/get-docker/)
+[docker-compose] (https://docs.docker.com/compose/install/)
+[kubect] (https://kubernetes.io/releases/download/)
+[minikube] (https://minikube.sigs.k8s.io/docs/start/)
 
 ## Start Pre-req's
 1. Launch Docker daemon
