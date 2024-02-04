@@ -54,12 +54,23 @@ The default version of Zookeeper in `docker-compose-kafka.yml` is 5, change this
 You will now see the `spring-cloud-dataflow-demo` Docker image running in your Docker Desktop Dashboard
 ![image](https://github.com/paul-reese/spring-cloud-dataflow-demo/assets/8217170/34c78c4c-7b00-44d4-b57c-67575b2abfe1)
 
-## Starting Docker Compose
+## Set variables needed for local development
+Let's init variables first
+1. set Dockerhub username and password
+2. set version of Data Flow
+3. set version of Skipper
+4. use local Maven repository as default for newly built applications
 ```
 export METADATA_DEFAULT_DOCKERHUB_USER=<your username>
 export METADATA_DEFAULT_DOCKERHUB_PASSWORD=<your passwrod>
 export DATAFLOW_VERSION=2.11.2
 export SKIPPER_VERSION=2.11.2
+
+export HOST_MOUNT_PATH=~/.m2
+export DOCKER_MOUNT_PATH=/root/.m2/
+```
+## Starting Docker Compose
+```
 docker-compose -f docker-compose.yml -f docker-compose-kafka.yml -f docker-compose-postgres.yml up
 ```
 ## SCDF Dashboard
