@@ -73,3 +73,8 @@ The [Spring Cloud Data Flow Dashboard](http://localhost:9393/dashboard/index.htm
    ```
    docker-compose down
    ```
+If errors occur, clean all containers:
+```
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
