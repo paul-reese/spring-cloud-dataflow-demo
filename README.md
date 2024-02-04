@@ -4,8 +4,6 @@ These binaries are needed to but build, run and deploy **Spring Cloud Data Flow*
 * [docker](https://docs.docker.com/get-docker/)
 * [docker-compose](https://docs.docker.com/compose/install/)
 * [kubect](https://kubernetes.io/releases/download/)
-* [minikube](https://minikube.sigs.k8s.io/docs/start/)
-
 ## Start Pre-req's
 1. Launch Docker daemon
 2. Launch Docker Dashbarod
