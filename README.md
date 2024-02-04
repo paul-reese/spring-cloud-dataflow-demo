@@ -63,6 +63,6 @@ You will now see the `spring-cloud-dataflow-demo` Docker image running in your D
 ![image](https://github.com/paul-reese/spring-cloud-dataflow-demo/assets/8217170/34c78c4c-7b00-44d4-b57c-67575b2abfe1)
 
 ## SCDF Dashboard
-The [Spring Cloud Data Flow Dashboard](http://localhost:9393/dashboard/index.html#/apps) will now be made available.  Additionally these ports will be exposed;
+The [Spring Cloud Data Flow Dashboard](http://localhost:9393/dashboard/index.html#/apps) will now be made available.  Additionally these endpoints will be exposed
 * [REST API](http://localhost:9393)
 * [Skipper Port](http://localhost:7577/api)
