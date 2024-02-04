@@ -5,7 +5,7 @@ docker[https://docs.docker.com/get-docker/]
 docker-compose[https://docs.docker.com/compose/install/]
 
 ## Building
-Building all of the projects of **Spring Cloud Data Flow** will take some time, be sure to have a warm beverage handy and crank some tunes.
+Building all of the projects of **Spring Cloud Data Flow** will take some time, be sure to have a warm beverage handy and crank some tunes.  If running locally, use Docker Deskop to watch the fun and munch on popocorn.
 
 1. Clone the project
 ```
