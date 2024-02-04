@@ -27,7 +27,7 @@ minikube [https://minikube.sigs.k8s.io/docs/start/]
    ```
 
 ## Building
-Building all of the projects of **Spring Cloud Data Flow** will take some time, be sure to have a warm beverage handy and crank some tunes.  If running locally, use Docker Deskop to watch the fun and munch on popocorn.
+Building all of the projects of **Spring Cloud Data Flow** will take some time, be sure to have a warm beverage handy and crank some tunes.  If running locally, use Docker Deskop to watch the fun and munch on popocorn. **But**, if you want to skip all the tests just add option "-DskipTests" to the command in step 3 below.
 
 1. Clone the project
 ```
@@ -38,7 +38,7 @@ git clone https://github.com/spring-cloud/spring-cloud-dataflow.git
 cd spring-cloud-df
 ```
 
-2. Build the root project
+3. Build the root project
 ```
 ./mvnw -s .settings.xml clean install
 ```
