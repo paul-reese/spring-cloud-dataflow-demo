@@ -61,3 +61,8 @@ The default version of Zookeeper in `docker-compose-kafka.yml` is 5, change this
 
 You will now see the `spring-cloud-dataflow-demo` Docker image running in your Docker Desktop Dashboard
 ![image](https://github.com/paul-reese/spring-cloud-dataflow-demo/assets/8217170/34c78c4c-7b00-44d4-b57c-67575b2abfe1)
+
+## SCDF Dashboard
+The [Spring Cloud Data Flow Dashboard](http://localhost:9393/dashboard/index.html#/apps) will now be made available.  Additionally these ports will be exposed;
+* [REST API](http://localhost:9393)
+* [Skipper Port](http://localhost:7577/api)
