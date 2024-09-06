@@ -32,11 +32,13 @@ public class VitalsApplication {
                 // Create new Vital object
                 Vitals vitals = new Vitals();
 
+                // Set the common attributes
                 vitals.setPatientId(measurement.getPatientId());
                 vitals.setDeviceId(measurement.getDeviceId());
                 vitals.setMeasurementType(measurement.getMeasurementType());
                 vitals.setMeasuredAt(measurement.getMeasuredAt());
 
+                // create Map of measurement values
                 Map<String, Integer> valueMap = measurement.getValues().stream()
                         .collect(Collectors.toMap(Measurement.Value::getType,
                                                   Measurement.Value::getValue));
@@ -45,7 +47,7 @@ public class VitalsApplication {
                 vitals.setPulse(valueMap.get("pulse"));
                 vitals.setIrregular(valueMap.get("irregular"));
 
-                // Set the remainder of Vitals
+                // Set the remainder of measurement vitals
                 vitals.setSignalStrengthPercentage(measurement.getSignalStrengthPercentage());
                 vitals.setBatteryPercentage(measurement.getBatteryPercentage());
                 vitals.setDeviceType(measurement.getDeviceType());
@@ -54,7 +56,7 @@ public class VitalsApplication {
                 // Serialize the Measurement object back to JSON
                 String processedPayload = objectMapper.writeValueAsString(vitals);
 
-                // Construct a new Message and return
+                // Construct a new Message and return it
                 return MessageBuilder.withPayload(processedPayload)
                         .copyHeaders(message.getHeaders())
                         .build();
