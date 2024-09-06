@@ -8,7 +8,7 @@ Build a deployable jar file and install to your ~/.m2 repository
 ```shell
 ./mvnw clean install
 ```
-### Create the application in SCDF namespace
+### Register the Vitals application with SCDF
 ```shell
 dataflow:>app register --name vitals --type processor --uri maven://io.awesome.stuff:Vitals:0.0.1-SNAPSHOT
 Successfully registered application 'processor:vitals```
