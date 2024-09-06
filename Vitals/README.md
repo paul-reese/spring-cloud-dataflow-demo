@@ -45,7 +45,6 @@ java -jar /Users/phopper/Documents/sandbox/spring-cloud-dataflow-demo/spring-clo
 ```
 
 ### list streams
-```stream list```
 ```shell
 dataflow:>stream list
 ╔═══════════════╤═══════════╤═════════════════╤═════════════════════════════════════════╗
