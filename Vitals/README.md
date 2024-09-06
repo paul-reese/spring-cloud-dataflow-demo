@@ -13,7 +13,7 @@ Build a deployable jar file and install to your ~/.m2 repository
 dataflow:>app register --name vitals --type processor --uri maven://io.awesome.stuff:Vitals:0.0.1-SNAPSHOT
 Successfully registered application 'processor:vitals```
 ```
-image::images/Vitals_Added_Application.png[Vitals - Added Application]
+![Vitals - Added Application](.images/Vitals_Added_Application.png)
 
 ### 
 
