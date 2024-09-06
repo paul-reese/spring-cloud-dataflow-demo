@@ -44,5 +44,16 @@ mv spring-cloud-dataflow-shell-2.11.5-20240905.084208-37.jar spring-cloud-datafl
 java -jar /Users/phopper/Documents/sandbox/spring-cloud-dataflow-demo/spring-cloud-dataflow-shell-2.11.5.jar
 ```
 
+### list streams
+```stream list```
+```shell
+dataflow:>stream list
+╔═══════════════╤═══════════╤═════════════════╤═════════════════════════════════════════╗
+║  Stream Name  │Description│Stream Definition│                 Status                  ║
+╠═══════════════╪═══════════╪═════════════════╪═════════════════════════════════════════╣
+║http_log_events│           │http | log       │The stream has been successfully deployed║
+╚═══════════════╧═══════════╧═════════════════╧═════════════════════════════════════════╝
+```
+
 
 
