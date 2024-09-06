@@ -19,7 +19,7 @@ http | vitals | log
 
 ## Write the JSON output to a data sink
 
-### to MondgoDB
+### to MongoDB
  
 #### Spin up a MongoDB instance
 #### Setup MongoDB sink
