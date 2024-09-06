@@ -33,4 +33,12 @@ http | vitals | log
 #### Setup PostgreSQL sink
 #### Test output
 
+## connect to SCDF server via SCDF shell
+### download SCDF shell binary
+```wget https://repo.spring.io/artifactory/snapshot/org/springframework/cloud/spring-cloud-dataflow-shell/2.11.5-SNAPSHOT/spring-cloud-dataflow-shell-2.11.5-20240905.084208-37.jar
+mv spring-cloud-dataflow-shell-2.11.5-20240905.084208-37.jar spring-cloud-dataflow-shell-2.11.5.jar
+```
+### connect to SCDF server
+```java -jar /Users/phopper/Documents/sandbox/spring-cloud-dataflow-demo/spring-cloud-dataflow-shell-2.11.5.jar```
+
 
