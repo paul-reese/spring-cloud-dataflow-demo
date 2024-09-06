@@ -4,10 +4,18 @@ This is a test application that takes a JSON structure of patient vitals and sto
 ## Build & Deploy to SCDF
 
 ### Build the application
-
+Build a deployable jar file and install to your ~/.m2 repository
+```shell
+./mvnw clean install
+```
 ### Create the application in SCDF namespace
+```shell
+dataflow:>app register --name vitals --type processor --uri maven://io.awesome.stuff:Vitals:0.0.1-SNAPSHOT
+Successfully registered application 'processor:vitals```
+```
+image::images/Vitals_Added_Application.png[Vitals - Added Application]
 
-### Deploy the application in SCDF
+### 
 
 ### Send a Vitals JSON payload
 Script will send a JSON payload to the HTTP source.  It will then process that data by normalizing the JSON data and output to log (SCDF server log)
@@ -15,11 +23,11 @@ Script will send a JSON payload to the HTTP source.  It will then process that d
 http | vitals | log
 ```
 
-### set the Vitals PORT on deploy to 20120
+### Set the Vitals PORT on deploy to 20120
 
 ## Write the JSON output to a data sink
 
-### to MongoDB
+### To MongoDB
  
 #### Spin up a MongoDB instance
 #### Setup MongoDB sink
@@ -28,13 +36,13 @@ http | vitals | log
 #### Send data to MongoDB Atlas
 ##### Test output
 
-### to PostgreSQL
+### To PostgreSQL
 #### Spin up a PostgreSQL instance
 #### Setup PostgreSQL sink
 #### Test output
 
-## connect to SCDF server via SCDF shell
-### download SCDF shell binary
+## Connect to SCDF server via SCDF shell
+### Download SCDF shell binary
 ```shell
 wget https://repo.spring.io/artifactory/snapshot/org/springframework/cloud/spring-cloud-dataflow-shell/2.11.5-SNAPSHOT/spring-cloud-dataflow-shell-2.11.5-20240905.084208-37.jar
 mv spring-cloud-dataflow-shell-2.11.5-20240905.084208-37.jar spring-cloud-dataflow-shell-2.11.5.jar
