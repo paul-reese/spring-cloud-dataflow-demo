@@ -5,7 +5,7 @@
 
 	<groupId>io.awesome.stuff</groupId>
 	<artifactId>Vitals</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2 -SNAPSHOT</version>
 	<name>Vitals</name>
 	<description>SCDF Demo</description>
 	<properties>
