@@ -4,9 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.awesome.stuff</groupId>
-    <artifactId>Vitals</artifactId>
+    <artifactId>VitalsHttpSender</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
 
     <name>Vitals</name>
     <description>Spring Boot project for sending JSON payloads</description>
