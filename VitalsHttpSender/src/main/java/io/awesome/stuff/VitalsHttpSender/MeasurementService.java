@@ -6,6 +6,8 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
@@ -25,7 +27,8 @@ public class MeasurementService {
         measurement.setPatientId(UUID.fromString("e148046d-e020-4303-937c-397439cfb832"));
         measurement.setDeviceId(UUID.fromString("7cc1ca2a-87b8-467a-b2ce-4052974e043f"));
         measurement.setMeasurementType("blood pressure");
-        measurement.setMeasuredAt("2021-02-23t22:06:00.000z");
+        measurement.setMeasuredAt(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")));
+        //measurement.setMeasuredAt("2021-02-23t22:06:00.000z");
         measurement.setSignalStrengthPercentage(94);
         measurement.setBatteryPercentage(58);
         measurement.setDeviceType("pylobp");
